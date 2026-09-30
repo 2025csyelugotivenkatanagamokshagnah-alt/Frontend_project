@@ -1,74 +1,202 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Health Awareness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engineering Workshop</title>
 
 <style>
-body {
-    background:#17252A;
-    color:#F1F1F1;
-    font-family:Arial;
+body{
+    font-family:Arial,sans-serif;
     margin:0;
+    background:#dfeaf0;
+    color:#263238;
 }
-header {
-    background:#23424A;
-    text-align:center;
-    padding:20px;
-}
-nav {
-    background:#102024;
-    text-align:center;
-    padding:12px;
-}
-nav a {
-    color:#8ED1C6;
-    margin:12px;
-    text-decoration:none;
-}
-section {
-    text-align:center;
-    padding:20px;
-}
-h2 {
-    color:#8ED1C6;
-}
-article {
-    background:#22383D;
-    padding:15px;
-    margin:12px auto;
-    max-width:700px;
-    border-radius:10px;
-}
-img {
-    width:180px;
-    height:120px;
-    object-fit:cover;
-    margin:8px;
-    border-radius:8px;
-}
-ul {
-    text-align:left;
-    display:inline-block;
-    line-height:1.8;
-}
-input, textarea {
-    padding:9px;
-    margin:5px;
-    width:250px;
-    background:#30484D;
+
+header{
+    background:#12344d;
     color:white;
-    border:1px solid #8ED1C6;
+    text-align:center;
+    padding:30px;
 }
-button {
-    padding:9px 22px;
-    background:#8ED1C6;
-    border:0;
+
+header h1{
+    margin:5px;
+    font-size:34px;
+}
+
+header p{
+    font-size:17px;
+    color:#d9edf7;
+}
+
+nav{
+    background:#087e8b;
+    text-align:center;
+    padding:16px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:12px;
+    padding:9px 14px;
+    font-size:16px;
     border-radius:5px;
 }
-footer {
-    background:#102024;
+
+nav a:hover{
+    background:#f4a261;
+    color:#172b3a;
+}
+
+nav a:active{
+    background:#ffd166;
+    color:#172b3a;
+}
+
+section{
+    background:#fffdf8;
+    margin:24px;
+    padding:25px;
+    border-radius:10px;
+}
+
+section h2{
+    color:#12344d;
     text-align:center;
-    padding:12px;
+    border-bottom:3px solid #087e8b;
+    padding-bottom:10px;
+}
+
+#home{
+    text-align:center;
+    background:#f7fbfc;
+}
+
+#home img{
+    width:80%;
+    height:auto;
+    display:block;
+    margin:18px auto;
+    border:4px solid #087e8b;
+    border-radius:8px;
+}
+
+#home p{
+    font-size:16px;
+    line-height:1.6;
+}
+
+#machines{
+    background:#eef7fa;
+}
+
+article{
+    width:28%;
+    display:inline-block;
+    vertical-align:top;
+    margin:1.5%;
+    padding:17px;
+    text-align:center;
+    border:2px solid #b8d8df;
+    border-radius:8px;
+    background:#ffffff;
+}
+
+article:hover{
+    background:#fff3df;
+    border-color:#f4a261;
+    transform:translateY(-3px);
+}
+
+article h3{
+    color:#087e8b;
+    font-size:21px;
+}
+
+article img{
+    width:100%;
+    height:auto;
+    display:block;
+    margin:auto;
+    border-radius:6px;
+}
+
+article img:hover{
+    opacity:0.85;
+}
+
+article p{
+    font-size:14px;
+    line-height:1.5;
+}
+
+#safety{
+    background:#fff8df;
+}
+
+#safety h2{
+    color:#8a5a00;
+    border-color:#e9b949;
+}
+
+li{
+    margin:11px;
+    font-size:16px;
+}
+
+li:hover{
+    color:#087e8b;
+}
+
+#gallery{
+    background:#edf7f2;
+    text-align:center;
+}
+
+#gallery h2{
+    color:#176b52;
+    border-color:#3ca982;
+}
+
+#gallery img{
+    width:29%;
+    height:auto;
+    margin:1%;
+    vertical-align:middle;
+    border:4px solid #3ca982;
+    border-radius:7px;
+}
+
+#gallery img:hover{
+    border-color:#f4a261;
+    opacity:0.85;
+}
+
+#contact{
+    background:#f3effb;
+    text-align:center;
+}
+
+#contact h2{
+    color:#55427a;
+    border-color:#8064a2;
+}
+
+#contact p{
+    font-size:16px;
+}
+
+footer{
+    background:#12344d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+footer p{
+    margin:5px;
 }
 </style>
 </head>
@@ -76,78 +204,136 @@ footer {
 <body>
 
 <header>
-<h1>💚 Health Awareness</h1>
-<p>Healthy habits for a better life</p>
+<h1>ENGINEERING WORKSHOP</h1>
+<p>Learn, Create and Build with Engineering Tools</p>
 </header>
 
 <nav>
-<a href="#life">Lifestyle</a>
-<a href="#food">Food</a>
-<a href="#exercise">Exercise</a>
-<a href="#tips">Tips</a>
+<a href="#home">Home</a>
+<a href="#machines">Machines</a>
+<a href="#safety">Safety</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<section id="life">
-<h2>Healthy Lifestyle</h2>
-<article>
-<p>Maintain a daily routine, stay active and avoid unhealthy
-habits. A positive lifestyle keeps our body and mind healthy.</p>
-</article>
+<section id="home">
+<h2>Workshop Introduction</h2>
+
+<img src="images/workshop.jpg" alt="Engineering Workshop">
+
+<p>
+An engineering workshop is a place where students learn practical
+engineering skills. It contains different machines and tools used
+for cutting, drilling, shaping and joining materials.
+</p>
+
+<p>
+Workshop practice helps students understand manufacturing processes
+and develop practical knowledge about engineering machines.
+</p>
 </section>
 
-<section id="food">
-<h2>Healthy Food</h2>
+<section id="machines">
+<h2>Engineering Machines</h2>
+
 <article>
-<p>Eat fresh fruits, vegetables, whole grains and healthy
-proteins. Avoid eating too much junk food.</p>
-<img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=500">
+<h3>Lathe Machine</h3>
+
+<img src="images/lathe.jpg" alt="Lathe Machine">
+
+<p>
+A lathe machine rotates a workpiece while a cutting tool removes
+unwanted material from it.
+</p>
+
+<p>
+It is used for turning, facing, drilling, threading and cutting
+cylindrical objects.
+</p>
+
+<p>
+It is commonly used to make shafts, bolts, screws, rods and
+other machine components.
+</p>
 </article>
+
+<article>
+<h3>Drilling Machine</h3>
+
+<img src="images/drill.jpg" alt="Drilling Machine">
+
+<p>
+A drilling machine is used to make circular holes in materials
+such as metal, wood and plastic.
+</p>
+
+<p>
+A rotating drill bit moves into the workpiece and produces a hole
+of the required size.
+</p>
+
+<p>
+It is useful for making holes for screws, bolts and machine parts.
+</p>
+</article>
+
+<article>
+<h3>Welding Machine</h3>
+
+<img src="images/welding.jpg" alt="Welding Machine">
+
+<p>
+A welding machine is used to join two or more metal parts
+permanently using heat.
+</p>
+
+<p>
+The heat melts the joining area and creates a strong connection
+when the metal cools.
+</p>
+
+<p>
+Welding is used for frames, gates, pipes, structures and
+machine components.
+</p>
+</article>
+
 </section>
 
-<section id="exercise">
-<h2>Exercise</h2>
-<article>
-<p>Regular exercise keeps the body strong and improves
-our energy and mood.</p>
-<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500">
-</article>
-</section>
+<section id="safety">
+<h2>Workshop Safety Rules</h2>
 
-<section id="tips">
-<h2>Sleep & Water Tips</h2>
-<article>
 <ul>
-<li>Get 7–9 hours of sleep.</li>
-<li>Drink enough water every day.</li>
-<li>Take breaks while studying.</li>
-<li>Follow a regular sleep schedule.</li>
+<li>Always wear safety goggles.</li>
+<li>Wear proper protective clothing.</li>
+<li>Use machines only with instructions.</li>
+<li>Keep the workshop clean.</li>
+<li>Do not touch moving machine parts.</li>
+<li>Keep hands away from cutting tools.</li>
+<li>Switch off machines after use.</li>
+<li>Follow the instructor's instructions.</li>
 </ul>
-</article>
 </section>
 
-<section>
-<h2>Health Awareness</h2>
-<article>
-<p>Regular checkups and healthy habits help us take better
-care of our health. Never ignore unusual health problems.</p>
-</article>
+<section id="gallery">
+<h2>Workshop Gallery</h2>
+
+<img src="images/tools.jpeg" alt="Workshop Tools">
+<img src="images/safety.jpg" alt="Workshop Safety">
+<img src="images/workshop2.jpg" alt="Workshop Activity">
+
 </section>
 
 <section id="contact">
 <h2>Contact Us</h2>
-<article>
-<form>
-<input type="text" placeholder="Your Name"><br>
-<input type="email" placeholder="Your Email"><br>
-<textarea placeholder="Your Message"></textarea><br>
-<button>Send Message</button>
-</form>
-</article>
+
+<p>Email: engineeringworkshop@gmail.com</p>
+<p>Phone: 9876543210</p>
+<p>Engineering Workshop, College Campus</p>
 </section>
 
 <footer>
-<p>©️ 2026 Health Awareness | Stay Healthy 💚</p>
+<p>© 2026 Engineering Workshop</p>
 </footer>
 
 </body>
