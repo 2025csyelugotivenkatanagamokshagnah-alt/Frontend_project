@@ -9,30 +9,50 @@
 body{
     font-family:Arial,sans-serif;
     margin:0;
-    background:#eef3f5;
-    color:#222;
+    background:#eaf1f5;
+    color:#263238;
 }
+
 header{
-    background:#24556b;
+    background:#2f5d73;
     color:white;
     text-align:center;
     padding:25px;
 }
-header h1{margin:5px;font-size:32px}
-header p{font-size:17px}
+
+header h1{
+    margin:5px;
+    font-size:32px;
+}
+
+header p{
+    font-size:17px;
+}
 
 nav{
-    background:#163746;
+    background:#203f4d;
     text-align:center;
     padding:15px;
 }
+
 nav a{
     color:white;
     text-decoration:none;
     margin:12px;
+    padding:8px 12px;
     font-size:16px;
 }
-nav a:hover{color:#ffd166}
+
+nav a:hover{
+    background:#4f8299;
+    border-radius:5px;
+    color:white;
+}
+
+nav a:active{
+    background:#f0b429;
+    color:#203f4d;
+}
 
 section{
     background:white;
@@ -40,18 +60,27 @@ section{
     padding:22px;
     border-radius:8px;
 }
+
 section h2{
-    color:#24556b;
+    color:#2f5d73;
     text-align:center;
-    border-bottom:2px solid #24556b;
+    border-bottom:2px solid #2f5d73;
     padding-bottom:8px;
 }
-#home{text-align:center}
+
+#home{
+    text-align:center;
+}
+
 #home img{
     width:70%;
-    height:230px;
-    object-fit:cover;
+    height:280px;
+    object-fit:contain;
+    background:#e8eef1;
+    border:2px solid #b8cbd3;
+    border-radius:6px;
 }
+
 #home p{
     font-size:16px;
     line-height:1.6;
@@ -64,15 +93,32 @@ article{
     margin:1.5%;
     padding:15px;
     text-align:center;
-    border:1px solid #ccc;
-    background:#f8fafb;
+    border:1px solid #c5d1d6;
+    border-radius:6px;
+    background:#f5f8fa;
 }
-article h3{color:#24556b}
+
+article:hover{
+    background:#e8f1f4;
+    border-color:#2f5d73;
+}
+
+article h3{
+    color:#2f5d73;
+}
+
 article img{
     width:100%;
-    height:140px;
-    object-fit:cover;
+    height:170px;
+    object-fit:contain;
+    background:#e7edef;
+    border-radius:5px;
 }
+
+article img:hover{
+    background:#dce8ed;
+}
+
 article p{
     font-size:14px;
     line-height:1.5;
@@ -82,20 +128,48 @@ li{
     margin:10px;
     font-size:16px;
 }
-#gallery{text-align:center}
+
+li:hover{
+    color:#2f5d73;
+}
+
+#gallery{
+    text-align:center;
+}
+
 #gallery img{
     width:29%;
-    height:170px;
-    object-fit:cover;
+    height:190px;
+    object-fit:contain;
+    background:#e8eef1;
     margin:1%;
-    border:3px solid #24556b;
+    border:3px solid #2f5d73;
+    border-radius:5px;
 }
-#contact{text-align:center}
+
+#gallery img:hover{
+    border-color:#f0b429;
+    background:#dce8ed;
+}
+
+#contact{
+    text-align:center;
+    background:#f5f8fa;
+}
+
+#contact p{
+    font-size:16px;
+}
+
 footer{
-    background:#163746;
+    background:#203f4d;
     color:white;
     text-align:center;
     padding:15px;
+}
+
+footer p{
+    margin:5px;
 }
 </style>
 </head>
@@ -117,12 +191,15 @@ footer{
 
 <section id="home">
 <h2>Workshop Introduction</h2>
-<img src="workshop.jpg" alt="Engineering Workshop">
+
+<img src="images/workshop.jpg" alt="Engineering Workshop">
+
 <p>
 An engineering workshop is a place where students learn practical
 engineering skills. It contains different machines and tools used
 for cutting, drilling, shaping and joining materials.
 </p>
+
 <p>
 Workshop practice helps students understand manufacturing processes
 and develop practical knowledge about engineering machines.
@@ -134,15 +211,19 @@ and develop practical knowledge about engineering machines.
 
 <article>
 <h3>Lathe Machine</h3>
-<img src="lathe.jpg" alt="Lathe Machine">
+
+<img src="images/lathe.jpg" alt="Lathe Machine">
+
 <p>
 A lathe machine rotates a workpiece while a cutting tool removes
 unwanted material from it.
 </p>
+
 <p>
 It is used for turning, facing, drilling, threading and cutting
 cylindrical objects.
 </p>
+
 <p>
 It is commonly used to make shafts, bolts, screws, rods and
 other machine components.
@@ -151,15 +232,19 @@ other machine components.
 
 <article>
 <h3>Drilling Machine</h3>
-<img src="drill.jpg" alt="Drilling Machine">
+
+<img src="images/drill.jpg" alt="Drilling Machine">
+
 <p>
 A drilling machine is used to make circular holes in materials
 such as metal, wood and plastic.
 </p>
+
 <p>
 A rotating drill bit moves into the workpiece and produces a hole
 of the required size.
 </p>
+
 <p>
 It is useful for making holes for screws, bolts and machine parts.
 </p>
@@ -167,24 +252,30 @@ It is useful for making holes for screws, bolts and machine parts.
 
 <article>
 <h3>Welding Machine</h3>
-<img src="welding.jpg" alt="Welding Machine">
+
+<img src="images/welding.jpg" alt="Welding Machine">
+
 <p>
 A welding machine is used to join two or more metal parts
 permanently using heat.
 </p>
+
 <p>
 The heat melts the joining area and creates a strong connection
 when the metal cools.
 </p>
+
 <p>
 Welding is used for frames, gates, pipes, structures and
 machine components.
 </p>
 </article>
+
 </section>
 
 <section id="safety">
 <h2>Workshop Safety Rules</h2>
+
 <ul>
 <li>Always wear safety goggles.</li>
 <li>Wear proper protective clothing.</li>
@@ -199,13 +290,16 @@ machine components.
 
 <section id="gallery">
 <h2>Workshop Gallery</h2>
-<img src="tools.jpg" alt="Workshop Tools">
-<img src="safety.jpg" alt="Workshop Safety">
-<img src="workshop2.jpg" alt="Workshop Activity">
+
+<img src="images/tools.jpeg" alt="Workshop Tools">
+<img src="images/safety.jpg" alt="Workshop Safety">
+<img src="images/workshop2.jpg" alt="Workshop Activity">
+
 </section>
 
 <section id="contact">
 <h2>Contact Us</h2>
+
 <p>Email: engineeringworkshop@gmail.com</p>
 <p>Phone: 9876543210</p>
 <p>Engineering Workshop, College Campus</p>
