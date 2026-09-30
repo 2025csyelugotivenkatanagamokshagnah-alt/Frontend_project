@@ -1,351 +1,218 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Engineering Workshop</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f2f6f7;
-    color: #222;
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#eef3f5;
+    color:#222;
+}
+header{
+    background:#24556b;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+header h1{margin:5px;font-size:32px}
+header p{font-size:17px}
+
+nav{
+    background:#163746;
+    text-align:center;
+    padding:15px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:12px;
+    font-size:16px;
+}
+nav a:hover{color:#ffd166}
+
+section{
+    background:white;
+    margin:22px;
+    padding:22px;
+    border-radius:8px;
+}
+section h2{
+    color:#24556b;
+    text-align:center;
+    border-bottom:2px solid #24556b;
+    padding-bottom:8px;
+}
+#home{text-align:center}
+#home img{
+    width:70%;
+    height:230px;
+    object-fit:cover;
+}
+#home p{
+    font-size:16px;
+    line-height:1.6;
 }
 
-header {
-    background-color: #234d63;
-    color: white;
-    text-align: center;
-    padding: 25px;
+article{
+    width:28%;
+    display:inline-block;
+    vertical-align:top;
+    margin:1.5%;
+    padding:15px;
+    text-align:center;
+    border:1px solid #ccc;
+    background:#f8fafb;
+}
+article h3{color:#24556b}
+article img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+}
+article p{
+    font-size:14px;
+    line-height:1.5;
 }
 
-header h1 {
-    margin: 5px;
-    font-size: 32px;
+li{
+    margin:10px;
+    font-size:16px;
 }
-
-header p {
-    font-size: 17px;
+#gallery{text-align:center}
+#gallery img{
+    width:29%;
+    height:170px;
+    object-fit:cover;
+    margin:1%;
+    border:3px solid #24556b;
 }
-
-nav {
-    background-color: #172f3d;
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 17px;
-}
-
-nav a:hover {
-    color: #ffd166;
-}
-
-section {
-    background-color: white;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 8px;
-}
-
-section h2 {
-    color: #234d63;
-    text-align: center;
-    border-bottom: 2px solid #234d63;
-    padding-bottom: 10px;
-}
-
-#home {
-    text-align: center;
-}
-
-#home img {
-    width: 70%;
-    height: 250px;
-    object-fit: cover;
-}
-
-#home p {
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-article {
-    width: 28%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 1.5%;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-article img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-article h3 {
-    color: #234d63;
-}
-
-article p {
-    line-height: 1.5;
-}
-
-li {
-    margin: 12px;
-    font-size: 17px;
-}
-
-#gallery {
-    text-align: center;
-}
-
-#gallery img {
-    width: 29%;
-    height: 180px;
-    object-fit: cover;
-    margin: 1%;
-    border: 3px solid #234d63;
-}
-
-#contact {
-    text-align: center;
-}
-
-footer {
-    background-color: #172f3d;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-footer p {
-    margin: 5px;
+#contact{text-align:center}
+footer{
+    background:#163746;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <h1>ENGINEERING WORKSHOP</h1>
-    <p>Learn, Create and Build with Engineering Tools</p>
+<h1>ENGINEERING WORKSHOP</h1>
+<p>Learn, Create and Build with Engineering Tools</p>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#tools">Tools</a>
-    <a href="#safety">Safety</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#machines">Machines</a>
+<a href="#safety">Safety</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section id="home">
-
-    <h2>Workshop Introduction</h2>
-
-    <img src="workshop.jpg" alt="Engineering Workshop">
-
-    <p>
-        An engineering workshop is a place where students learn
-        practical engineering skills. It provides tools and machines
-        for cutting, drilling, welding and other activities.
-    </p>
-
-    <p>
-        Workshop practice helps students understand how machines
-        work and how engineering materials can be shaped and joined.
-        It also provides practical knowledge about different tools,
-        machines and manufacturing processes.
-    </p>
-
+<h2>Workshop Introduction</h2>
+<img src="workshop.jpg" alt="Engineering Workshop">
+<p>
+An engineering workshop is a place where students learn practical
+engineering skills. It contains different machines and tools used
+for cutting, drilling, shaping and joining materials.
+</p>
+<p>
+Workshop practice helps students understand manufacturing processes
+and develop practical knowledge about engineering machines.
+</p>
 </section>
 
+<section id="machines">
+<h2>Engineering Machines</h2>
 
-<section id="tools">
+<article>
+<h3>Lathe Machine</h3>
+<img src="lathe.jpg" alt="Lathe Machine">
+<p>
+A lathe machine rotates a workpiece while a cutting tool removes
+unwanted material from it.
+</p>
+<p>
+It is used for turning, facing, drilling, threading and cutting
+cylindrical objects.
+</p>
+<p>
+It is commonly used to make shafts, bolts, screws, rods and
+other machine components.
+</p>
+</article>
 
-    <h2>Engineering Machines</h2>
+<article>
+<h3>Drilling Machine</h3>
+<img src="drill.jpg" alt="Drilling Machine">
+<p>
+A drilling machine is used to make circular holes in materials
+such as metal, wood and plastic.
+</p>
+<p>
+A rotating drill bit moves into the workpiece and produces a hole
+of the required size.
+</p>
+<p>
+It is useful for making holes for screws, bolts and machine parts.
+</p>
+</article>
 
-    <article>
-
-        <h3>Lathe Machine</h3>
-
-        <img src="lathe.jpg" alt="Lathe Machine">
-
-        <p>
-            A lathe machine is one of the most important machines
-            used in an engineering workshop. It is mainly used to
-            rotate a workpiece and remove unwanted material with
-            a cutting tool.
-        </p>
-
-        <p>
-            The workpiece is fixed firmly in the machine and rotated
-            at a suitable speed. The cutting tool is then moved
-            against the rotating material to give it the required
-            shape and size.
-        </p>
-
-        <p>
-            <b>Uses:</b> It is used for turning, facing, drilling,
-            threading and cutting cylindrical components.
-        </p>
-
-        <p>
-            <b>Applications:</b> Lathe machines are commonly used
-            to manufacture shafts, bolts, screws, rods and other
-            machine parts.
-        </p>
-
-        <p>
-            <b>Importance:</b> It helps students understand machining,
-            measurement and the proper use of cutting tools.
-        </p>
-
-    </article>
-
-
-    <article>
-
-        <h3>Drilling Machine</h3>
-
-        <img src="drill.jpg" alt="Drilling Machine">
-
-        <p>
-            A drilling machine is a workshop machine used to produce
-            circular holes in different materials. It is commonly
-            used on metals, wood and plastic materials.
-        </p>
-
-        <p>
-            The drill bit rotates at high speed and moves into the
-            workpiece to create a hole. Different drill bits can be
-            selected according to the required hole size.
-        </p>
-
-        <p>
-            <b>Uses:</b> It is used for drilling new holes, enlarging
-            existing holes and preparing holes for screws and bolts.
-        </p>
-
-        <p>
-            <b>Applications:</b> Drilling machines are used for making
-            holes in metal plates, machine parts, wooden components
-            and other engineering materials.
-        </p>
-
-        <p>
-            <b>Importance:</b> It helps students learn accurate drilling,
-            measurement and safe handling of workshop equipment.
-        </p>
-
-    </article>
-
-
-    <article>
-
-        <h3>Welding Machine</h3>
-
-        <img src="welding.jpg" alt="Welding Machine">
-
-        <p>
-            A welding machine is used to join two or more metal parts
-            permanently. Welding is an important process in engineering
-            and manufacturing industries.
-        </p>
-
-        <p>
-            Heat is produced using electrical energy or another suitable
-            method. The heat melts the joining area and forms a strong
-            connection after cooling.
-        </p>
-
-        <p>
-            <b>Uses:</b> Welding is used for joining metal sheets,
-            pipes, rods, frames and different machine components.
-        </p>
-
-        <p>
-            <b>Applications:</b> It is commonly used in construction,
-            automobile industries, manufacturing and repair work.
-        </p>
-
-        <p>
-            <b>Importance:</b> Welding helps students understand metal
-            joining techniques and the importance of safety while working.
-        </p>
-
-    </article>
-
+<article>
+<h3>Welding Machine</h3>
+<img src="welding.jpg" alt="Welding Machine">
+<p>
+A welding machine is used to join two or more metal parts
+permanently using heat.
+</p>
+<p>
+The heat melts the joining area and creates a strong connection
+when the metal cools.
+</p>
+<p>
+Welding is used for frames, gates, pipes, structures and
+machine components.
+</p>
+</article>
 </section>
-
 
 <section id="safety">
-
-    <h2>Workshop Safety Rules</h2>
-
-    <ul>
-        <li>Wear safety goggles while working.</li>
-
-        <li>Use tools carefully and correctly.</li>
-
-        <li>Keep the workshop clean.</li>
-
-        <li>Wear proper protective clothing.</li>
-
-        <li>Switch off machines after use.</li>
-
-        <li>Follow the instructions given by the instructor.</li>
-
-        <li>Do not touch moving machine parts.</li>
-
-        <li>Keep hands away from cutting tools and hot surfaces.</li>
-
-    </ul>
-
+<h2>Workshop Safety Rules</h2>
+<ul>
+<li>Always wear safety goggles.</li>
+<li>Wear proper protective clothing.</li>
+<li>Use machines only with instructions.</li>
+<li>Keep the workshop clean.</li>
+<li>Do not touch moving machine parts.</li>
+<li>Keep hands away from cutting tools.</li>
+<li>Switch off machines after use.</li>
+<li>Follow the instructor's instructions.</li>
+</ul>
 </section>
-
 
 <section id="gallery">
-
-    <h2>Workshop Gallery</h2>
-
-    <img src="tools.jpg" alt="Engineering Tools">
-
-    <img src="safety.jpg" alt="Workshop Safety">
-
-    <img src="workshop2.jpg" alt="Workshop Activity">
-
+<h2>Workshop Gallery</h2>
+<img src="tools.jpg" alt="Workshop Tools">
+<img src="safety.jpg" alt="Workshop Safety">
+<img src="workshop2.jpg" alt="Workshop Activity">
 </section>
-
 
 <section id="contact">
-
-    <h2>Contact Us</h2>
-
-    <p>Email: engineeringworkshop@gmail.com</p>
-
-    <p>Phone: 9876543210</p>
-
-    <p>Engineering Workshop, College Campus</p>
-
+<h2>Contact Us</h2>
+<p>Email: engineeringworkshop@gmail.com</p>
+<p>Phone: 9876543210</p>
+<p>Engineering Workshop, College Campus</p>
 </section>
 
-
 <footer>
-
-    <p>© 2026 Engineering Workshop</p>
-
+<p>© 2026 Engineering Workshop</p>
 </footer>
 
 </body>
